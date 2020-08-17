@@ -38,5 +38,8 @@
       (let [[part & remaining] remaining-asym-parts]
         (recur remaining
                (into final-body-parts
-                     (set [part (matching-part part)])))))))
+                     (set [part (matching-part part)]))))))
+  (symmetrize-body-parts asym-hobbit-body-parts)
+  )
+
     
